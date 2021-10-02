@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 -  [Solution URL:](https://github.com/ArseniyX/repo-pomodoro)
--  [Live Site URL:](https://arseniyx.github.io/pomodoro-app-react/)
+-  [Live Site URL:](https://arseniyx.github.io/repo-pomodoro/)
 
 ## My process
 
