@@ -33,7 +33,7 @@ const Rectangle = styled.div`
   background-color: #fff;
 
   @media (max-width: 540px) {
-    top: 405px;
+    top: 420px;
     left: 50%;
     margin-left: -70px;
   }

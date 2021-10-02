@@ -27,10 +27,9 @@ const SettingsContainer = styled.form`
   @media (max-width: 540px) {
     position: static;
     width: 90%;
-    max-height: 410px;
     min-width: 240px;
     border-radius: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 `;
 
