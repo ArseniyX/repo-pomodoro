@@ -23,7 +23,7 @@ const ApplyButton = styled.input`
 
 const Rectangle = styled.div`
   position: absolute;
-  top: 403px;
+  top: 358px;
   left: 50%;
   margin-left: -70px;
   border: none;
@@ -33,7 +33,7 @@ const Rectangle = styled.div`
   background-color: #fff;
 
   @media (max-width: 540px) {
-    top: 403px;
+    top: 405px;
     left: 50%;
     margin-left: -70px;
   }

@@ -18,16 +18,16 @@ const Background = styled.div`
 const SettingsContainer = styled.form`
   position: static;
   width: 540px;
-  margin: 40px auto;
-  min-height: 390px;
+  margin: 20px auto;
+  padding-bottom: 15px;
   background-color: #fff;
   border-radius: 25px;
   font-family: "Kumbh Sans";
 
   @media (max-width: 540px) {
     position: static;
-    margin: 5% auto;
     width: 90%;
+    max-height: 410px;
     min-width: 240px;
     border-radius: 15px;
     padding-bottom: 10px;
@@ -123,18 +123,26 @@ const Settings = ({
       <SettingsContainer onSubmit={onSubmit}>
         <SettingsHeader>
           <SettingsTitle>Settings</SettingsTitle>
-          <CloseIcon
-            src={iconClose}
-            alt={"clone"}
-            onClick={toggleVisibility}
-          />
+          <CloseIcon src={iconClose} alt={"clone"} onClick={toggleVisibility} />
         </SettingsHeader>
         <SetTime>
           <SetTimeTitle>TIME (MINUTES)</SetTimeTitle>
           <SetTimeInner>
-            <InputBlock name="pomodoro" onChange={set("pomodoro")} />
-            <InputBlock name="short break" onChange={set("short_break")} />
-            <InputBlock name="long break" onChange={set("long_break")} />
+            <InputBlock
+              placeholder={values.pomodoro}
+              name="pomodoro"
+              onChange={set("pomodoro")}
+            />
+            <InputBlock
+              placeholder={values.short_break}
+              name="short break"
+              onChange={set("short_break")}
+            />
+            <InputBlock
+              placeholder={values.long_break}
+              name="long break"
+              onChange={set("long_break")}
+            />
           </SetTimeInner>
           <SelectFontOrColor
             values={values}

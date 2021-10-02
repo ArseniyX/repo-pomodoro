@@ -21,6 +21,7 @@ const Container = styled.div`
 
 const SettingsImg = styled.img`
   margin-top: 63px;
+  cursor: pointer;
   @media (max-width: 375px) {
     margin-top: 144px;
   }

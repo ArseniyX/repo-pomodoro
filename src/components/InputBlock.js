@@ -38,7 +38,7 @@ const SetTimeInput = styled.input`
   font-size: 14px;
   line-height: 17px;
 
-  color: #1e213f;
+  color: black;
 
   @media (max-width: 540px) {
     margin-top: 0;
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   margin: auto 0;
 `;
 
-const InputBlock = ({ name, onChange }) => {
+const InputBlock = ({ name, onChange, placeholder }) => {
   return (
     <SetTimeBlock>
       <SetTimeLabel>
@@ -60,6 +60,7 @@ const InputBlock = ({ name, onChange }) => {
           type="number"
           onChange={onChange}
           required
+          placeholder={placeholder}
           min="1"
           max="120"
         />
