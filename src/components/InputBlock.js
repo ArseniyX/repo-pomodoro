@@ -47,7 +47,7 @@ const SetTimeInput = styled.input`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.span`
   margin: auto 0;
 `;
 

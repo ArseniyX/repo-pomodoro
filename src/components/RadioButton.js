@@ -13,7 +13,7 @@ const SelectLabel = styled.label`
   text-align: center;
   padding-top: ${({ font }) => (font !== "Space Mono" ? "8px" : "6px")};
   border-radius: 50%;
-  background-color: ${({ color }) => color};
+  background-color: ${({ bgColor }) => bgColor};
   font-family: ${({ font }) => font};
 
   &:hover {
@@ -21,9 +21,6 @@ const SelectLabel = styled.label`
     padding-top: ${({ font }) => (font !== "Space Mono" ? "6px" : "4px")};
     border: 2px solid #fff1fa;
   }
-`;
-
-const Wrapper = styled.div`
 `;
 
 const RadioButton = ({
@@ -36,8 +33,8 @@ const RadioButton = ({
   content,
 }) => {
   return (
-    <SelectLabel color={color} font={font} fontColor={fontColor}>
-      <Wrapper>{content}</Wrapper>
+    <SelectLabel bgColor={color} font={font} fontColor={fontColor}>
+      {content}
       <RadioBtn
         type="radio"
         value={index}
