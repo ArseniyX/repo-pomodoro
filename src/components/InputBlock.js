@@ -47,12 +47,15 @@ const SetTimeInput = styled.input`
   }
 `;
 
+const Wrapper = styled.div`
+  margin: auto 0;
+`;
 
 const InputBlock = ({ name, onChange }) => {
   return (
     <SetTimeBlock>
       <SetTimeLabel>
-        {name}
+        <Wrapper>{name}</Wrapper>
         <SetTimeInput
           type="number"
           onChange={onChange}

@@ -16,12 +16,10 @@ const Background = styled.div`
 `;
 
 const SettingsContainer = styled.form`
-  position: absolute;
+  position: static;
   width: 540px;
-  left: 50%;
-  top: 50%;
-  margin-top: -215px; /* Negative half of height. */
-  margin-left: -270px;
+  margin: 40px auto;
+  min-height: 390px;
   background-color: #fff;
   border-radius: 25px;
   font-family: "Kumbh Sans";
