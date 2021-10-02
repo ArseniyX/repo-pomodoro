@@ -7,7 +7,7 @@ const ApplyButton = styled.input`
   width: 140px;
   height: 53px;
   border-radius: 26.5px;
-  background-color: ${({ color = "#F87070" }) => color};
+  background-color: ${({ bgColor }) => bgColor};
   font-weight: bold;
   font-size: 16px;
   font-family: inherit;
@@ -42,7 +42,7 @@ const Rectangle = styled.div`
 const AcceptButton = ({ values }) => {
   return (
     <Rectangle>
-      <ApplyButton type="submit" color={COLORS[values.color]} value="Apply" />
+      <ApplyButton type="submit" bgColor={COLORS[values.color]} value="Apply" />
     </Rectangle>
   );
 };
